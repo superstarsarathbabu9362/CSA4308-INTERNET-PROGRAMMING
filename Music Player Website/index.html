@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guntur Kaaram – Dum Masala</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+  <div class="music-card">
+    <img class="thumbnail" 
+         src="https://www.naasongs.to/wp-content/uploads/2024/01/Guntur-Kaaram-2023-Ramana-Aei.jpg" 
+         alt="Guntur Kaaram Thumbnail">
+
+    <div class="title">Dum Masala – Guntur Kaaram</div>
+
+    <audio id="audio" src="https://mp3teluguwap.net/mp3/2024/Guntur%20Karam/Guntur%20Karam%20-%20HQ/Dum%20Masala.mp3"></audio>
+
+    <div class="controls">
+      <button class="btn" onclick="volumeDown()">🔉</button>
+      <button class="btn" onclick="skipBack()">⏮</button>
+      <button class="btn" id="playPauseBtn" onclick="togglePlayPause()">▶</button>
+      <button class="btn" onclick="skipForward()">⏭</button>
+      <button class="btn" onclick="volumeUp()">🔊</button>
+    </div>
+
+    <div class="progress-container" onclick="seek(event)">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="time">
+      <span id="current-time">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Link to external JS -->
+</body>
+</html>
